@@ -1,0 +1,68 @@
+#game-board {
+  width: 400px;
+  height: 350px; /* Adjusted to make the board square */
+
+  position: relative;
+  margin: 20px auto;
+  background-color: #ecf0f1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Added shadow effect */
+  transition: background-color 0.5s ease; /* Added transition effect */
+}
+
+.snake {
+  width: 18px;
+  height: 18px;
+  background-color: #3498db;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out; /* Added transition effect */
+}
+
+.snake-head {
+  background-color: #2980b9;
+}
+
+.food {
+  width: 20px;
+  height: 20px;
+  background-color: #e74c3c;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#score, #previous-highest-score {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#controls {
+  text-align: center;
+  margin-top: 7px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#speed-controls {
+  position: absolute;
+  bottom: 32px;
+  left: 48%;
+  transform: translateX(-50%);
+}
+
+.speed-option {
+  margin: 0 5px;
+}
